@@ -1,0 +1,8 @@
+services:
+  simba-security:
+    build: .
+    container_name: simba-security
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/data
